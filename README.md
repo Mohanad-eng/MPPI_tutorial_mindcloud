@@ -1,6 +1,6 @@
 # MPPI_tutorial_mindcloud
-First we will use turtlebot3 named waffle
-export TURTLEBOT3_MODEL=waffle
+* First we will use turtlebot3 named waffle
+``export TURTLEBOT3_MODEL=waffle``
 every terminal you will run export it 
 why ? 
 TURTLEBOT3_MODEL
