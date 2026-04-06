@@ -1,57 +1,59 @@
 # MPPI_tutorial_mindcloud
 * First we will use turtlebot3 named waffle
-``export TURTLEBOT3_MODEL=waffle``
-every terminal you will run export it 
-why ? 
-TURTLEBOT3_MODEL
+``export TURTLEBOT3_MODEL=waffle`` //
 
-This is a specific variable used by TurtleBot3 packages.
+* every terminal you will run export it //
+why ?
 
-It tells ROS:
+TURTLEBOT3_MODEL //
+This is a specific variable used by TurtleBot3 packages. //
+It tells ROS: //
+“Which robot model should I load?” //
+Then it decides: //
+1. which URDF (robot model) to load
+2. which sensors to enable
+3. which topics/nodes to start //
+**This only works in the current terminal session.**
 
-“Which robot model should I load?”
-Then it decides:
-
-which URDF (robot model) to load
-which sensors to enable
-which topics/nodes to start
-This only works in the current terminal session.
-
-If you open a new terminal → you must run it again.
-
+**If you open a new terminal → you must run it again.**
 👉 To make it permanent:
 
-echo "export TURTLEBOT3_MODEL=waffle" >> ~/.bashrc
-source ~/.bashrc
-second to use mppi we must have  amap we will use slam_toolbox pkg from nav2 
-sudo apt install -y ros-jazzy-slam-toolbox
-ros2 launch slam_toolbox online_async_launch.py \
-  use_sim_time:=true
-  
-  then to cintriol turtlebot3 we use the tekleop to make a map 
-  export TURTLEBOT3_MODEL=waffle
-ros2 run turtlebot3_teleop teleop_keyboard
+``echo "export TURTLEBOT3_MODEL=waffle" >> ~/.bashrc`` //
+``source ~/.bashrc`` //
 
-Drive around the entire world until the map looks complete in RViz2, 
+## second to use mppi we must have  amap we will use slam_toolbox pkg from nav2 :
+``sudo apt install -y ros-jazzy-slam-toolbox``
+``ros2 launch slam_toolbox online_async_launch.py \use_sim_time:=true``
+  
+## then to control turtlebot3 we use the tekleop to make a map 
+``export TURTLEBOT3_MODEL=waffle`` //
+``ros2 run turtlebot3_teleop teleop_keyboard``
+
+* Drive around the entire world until the map looks complete in RViz2. 
 
 here is an image to how setup rviz2 
 
-then save map 
-mkdir -p ~/mppi_ws/map
-ros2 run nav2_map_server map_saver_cli \
+* then save map
+  
+``mkdir -p ~/mppi_ws/map``
+``ros2 run nav2_map_server map_saver_cli \
   -f ~/mppi_ws/map/map \
-  --ros-args -p use_sim_time:=true
+  --ros-args -p use_sim_time:=true``
 
   map shape
-  Verify:
-bashls ~/mppi_ws/map/
+  
+* Verify there is a map:
+``bashls ~/mppi_ws/map/`` //
 # should show: map.pgm  map.yaml
 
-You have a custom turtlebot3 workspace. Source it first:
+## You have a custom turtlebot3 workspace. 
+* Source it first:
 
-source ~/turtlebot3_ws/install/setup.bash
-export TURTLEBOT3_MODEL=waffle
-ros2 run turtlebot3_teleop teleop_keyboard
+``source ~/turtlebot3_ws/install/setup.bash``
+
+``export TURTLEBOT3_MODEL=waffle``
+
+``ros2 run turtlebot3_teleop teleop_keyboard``
 
 # Terminal 2
 source ~/turtlebot3_ws/install/setup.bash
