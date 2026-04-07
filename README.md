@@ -103,4 +103,4 @@ Robot should start moving using MPPI
 
 ![Photo From Rviz2 Simulation](<Screenshot from 2026-04-07 07-44-41.png>)
 
-![Photo From Rviz2 Simulation](<Photo1.png>)
+![Photo From Rviz2 Simulation](<Photo1>)
