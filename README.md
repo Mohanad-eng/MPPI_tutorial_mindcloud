@@ -61,14 +61,19 @@ here is an image to how setup rviz2
 ## The Work Flow is As follows : 
 
 Terminal 1 → Gazebo
+
 Terminal 2 → SLAM (build map once)
+
 Terminal 3 → Teleop (drive to build map)
+
 Terminal 4 → Save map
+
 Terminal 5 → Nav2 with MPPI
+
 Terminal 6 → RViz2
 
 ## You have a custom turtlebot3 workspace. 
-
+ Source It and start the project 
 # commands of mppi 
 ## Terminal 1 :
 
@@ -86,7 +91,7 @@ Terminal 6 → RViz2
 
 `` ros2 launch turtlebot3_navigation2 navigation2.launch.py   use_sim_time:=true   map:=/home/mohanad/mppi_ws/map/map.yaml   params_file:=/home/mohanad/mppi_ws/params/nav2_mppi_params.yaml``
 
-## In Rviz2
+## In Rviz2 :
 
 Click "2D Pose Estimate" → click where the robot is on the map → drag to set direction
 Wait a few seconds for AMCL to localize
