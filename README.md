@@ -84,3 +84,21 @@ Terminal 6 → RViz2
 mohanad@mohanad:~$ ros2 launch turtlebot3_navigation2 navigation2.launch.py   use_sim_time:=true   map:=/home/$USER/turtlebot3_ws/src/turtlebot3/turtlebot3_navigation2/map/map.yaml   params_file:=/home/$USER/mppi_ws/params/nav2_mppi_params.yaml
 mohanad@mohanad:~$ ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 
+# commands of mppi 
+## Terminal 1 :
+
+``export TURTLEBOT3_MODEL=waffle``
+
+``source ~/turtlebot3_ws/install/setup.bash``
+
+``ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py``
+
+## Terminal 2 :
+
+``export TURTLEBOT3_MODEL=waffle``
+
+``source ~/turtlebot3_ws/install/setup.bash``
+
+`` ros2 launch turtlebot3_navigation2 navigation2.launch.py   use_sim_time:=true   map:=/home/mohanad/mppi_ws/map/map.yaml   params_file:=/home/mohanad/mppi_ws/params/nav2_mppi_params.yaml``
+
+
