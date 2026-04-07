@@ -99,5 +99,5 @@ Wait a few seconds for AMCL to localize
 Click "Nav2 Goal" → click anywhere on the map → drag to set direction
 Robot should start moving using MPPI
 
-![Photo From Rviz2 Simulation](Photo1.png)
+![Photo From Rviz2 Simulation](/Photo1.png)
 
