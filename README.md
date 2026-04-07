@@ -1,8 +1,9 @@
 # MPPI_tutorial_mindcloud
 * First we will use turtlebot3 named waffle
-``export TURTLEBOT3_MODEL=waffle`` //
+``export TURTLEBOT3_MODEL=waffle``
 
-* every terminal you will run export it //
+* every terminal you will run export it
+  
 why ?
 
 TURTLEBOT3_MODEL 
@@ -36,7 +37,7 @@ Then it decides:
 ``ros2 launch slam_toolbox online_async_launch.py \use_sim_time:=true``
   
 ## then to control turtlebot3 we use the tekleop to make a map 
-``export TURTLEBOT3_MODEL=waffle`` //
+``export TURTLEBOT3_MODEL=waffle`` 
 
 ``ros2 run turtlebot3_teleop teleop_keyboard``
 
@@ -107,4 +108,4 @@ Robot should start moving using MPPI
 
 > And here is a Video for the simulation
 
-![Photo From Rviz2 Simulation](<Screencast from 2026-04-07 07-41-59.webm>)
+![Photo From Rviz2 Simulation](<Screencast from 2026-04-07 07-41-59>)
