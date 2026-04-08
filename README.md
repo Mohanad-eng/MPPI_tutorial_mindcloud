@@ -57,7 +57,7 @@ here is an image to how setup rviz2
 * Verify there is a map:
 ``bashls ~/mppi_ws/map/``
 
-# should show: map.pgm  map.yaml
+### should show: map.pgm  map.yaml
 
 ## The Work Flow is As follows : 
 
@@ -108,4 +108,4 @@ Robot should start moving using MPPI
 
 > And here is a Video for the simulation
 
-![video](<Video>)
+![video](<Video.gif>)
