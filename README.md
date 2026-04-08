@@ -108,4 +108,4 @@ Robot should start moving using MPPI
 
 > And here is a Video for the simulation
 
-<video src="Screencast from 2026-04-08 06-31-48.webm" width="500" controls></video>
+![MPPI Navigation Simulation](<Screencast from 2026-04-08 06-31-48.gif>)
