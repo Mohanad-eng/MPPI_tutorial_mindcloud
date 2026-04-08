@@ -5,8 +5,12 @@
 - MPPI is Model Predective path integral an approach from MPC control algorthim
 - Instead of solving a deterministic optimization problem,
 At MPPI, we consider two primary features that affect the controller's performance wich are Trajectory and Horizion (Future)
-- 
--
+- In MPPI, multiple such trajectories are sampled to explore the state and control space. The idea is to evaluate the cost associated with each trajectory and then use this information to determine the optimal control action.
+- The horizon, often referred to as the prediction or planning horizon, is the number of time steps over which future trajectories are considered in the optimization problem. It defines how far into the future the controller looks when making decisions.
+- If the horizon is too short, the controller might not have enough foresight to make good decisions, especially in scenarios where actions have long-term consequences.
+If the horizon is too long, the computational complexity can become expensive, especially since MPPI involves sampling multiple trajectories. Additionally, predictions far into the future might be less accurate due to uncertainties in the system dynamics or disturbances.
+Press enter or click to view image in full size
+
 ![Photo From Rviz2 Simulation](<https://miro.medium.com/v2/resize:fit:1100/format:webp/1*rddpGzFMMdBFkFmmLdQDuA.png>)
 
 ## let's Simulate the Above approach !
@@ -135,3 +139,7 @@ Robot should start moving using MPPI
 > And here is a Video for the simulation
 
 <video src="video.webm" width="500" controls></video>
+
+To Visualize the trajectory in Rviz2 we use makerarray and choose /waypoints 
+
+![Photo From Rviz2 Simulation](<Photo2>)
