@@ -102,8 +102,10 @@ Robot should start moving using MPPI
 
 > Photos from Rviz Window 
 
-[![Watch the MPPI Simulation](Screenshot_from_2026-04-07_07-44-41.png)](Video.webm)
+![Photo From Rviz2 Simulation](<Screenshot from 2026-04-07 07-44-41.png>)
 
 ![Photo From Rviz2 Simulation](<Photo1>)
 
 > And here is a Video for the simulation
+
+<video src="Video.webm" width="800" controls></video>
