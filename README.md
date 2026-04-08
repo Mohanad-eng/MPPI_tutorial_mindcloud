@@ -65,7 +65,7 @@ by using these commands in another Terminal :
 
 * map shape :
 
-![Photo From Rviz2 Simulation](<map.pgm>)
+![Photo From Rviz2 Simulation](<map.png>)
 
   
 * Verify there is a map:
