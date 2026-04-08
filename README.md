@@ -51,7 +51,7 @@ open your another terminal and paste these lines :
 
 here is an image to how setup rviz2 
 
-![Photo From Rviz2 Simulation](<Photo1>)
+![Photo From Rviz2 Simulation](<>)
 
 * then save map :
 
