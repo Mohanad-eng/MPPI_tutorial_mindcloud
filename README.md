@@ -1,4 +1,6 @@
 # MPPI_tutorial_mindcloud
+
+![Photo From Rviz2 Simulation](<https://miro.medium.com/v2/resize:fit:1100/format:webp/1*rddpGzFMMdBFkFmmLdQDuA.png>)
 * First we will use turtlebot3 named waffle
 ``export TURTLEBOT3_MODEL=waffle``
 
