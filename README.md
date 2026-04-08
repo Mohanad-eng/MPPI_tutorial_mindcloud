@@ -1,6 +1,15 @@
 # MPPI_tutorial_mindcloud
 
+## What is MPPI ?
+
+- MPPI is Model Predective path integral an approach from MPC control algorthim
+- Instead of solving a deterministic optimization problem,
+At MPPI, we consider two primary features that affect the controller's performance wich are Trajectory and Horizion (Future)
+- 
+-
 ![Photo From Rviz2 Simulation](<https://miro.medium.com/v2/resize:fit:1100/format:webp/1*rddpGzFMMdBFkFmmLdQDuA.png>)
+
+## let's Simulate the Above approach !
 * First we will use turtlebot3 named waffle
 ``export TURTLEBOT3_MODEL=waffle``
 
@@ -67,7 +76,7 @@ by using these commands in another Terminal :
 
 * map shape :
 
-![Photo From Rviz2 Simulation](<map.png>)
+![Photo From Rviz2 Simulation](<map.pgm>)
 
   
 * Verify there is a map:
