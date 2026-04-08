@@ -108,4 +108,4 @@ Robot should start moving using MPPI
 
 > And here is a Video for the simulation
 
-<video src="Video.webm" width="800" controls></video>
+<video src="Video" width="800" controls></video>
