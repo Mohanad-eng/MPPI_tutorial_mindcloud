@@ -4,7 +4,7 @@
 
 * every terminal you will run export it
   
-why ?
+#### **why ?**
 
 TURTLEBOT3_MODEL 
 
@@ -30,13 +30,19 @@ Then it decides:
 
 ``source ~/.bashrc``
 
-## second to use mppi we must have  amap we will use slam_toolbox pkg from nav2 :
+## second to use mppi we must have  a Map we will use slam_toolbox pkg from nav2 :
+
+open your terminal and paste these lines :
 
 ``sudo apt install -y ros-jazzy-slam-toolbox``
 
 ``ros2 launch slam_toolbox online_async_launch.py \use_sim_time:=true``
+
+> if you have a Made pkg for mapping you can use it also
   
 ## then to control turtlebot3 we use the tekleop to make a map 
+open your another terminal and paste these lines : 
+
 ``export TURTLEBOT3_MODEL=waffle`` 
 
 ``ros2 run turtlebot3_teleop teleop_keyboard``
@@ -45,19 +51,28 @@ Then it decides:
 
 here is an image to how setup rviz2 
 
-* then save map
+![Photo From Rviz2 Simulation](<Photo1>)
+
+* then save map :
+
+by using these commands in another Terminal :
   
 ``mkdir -p ~/mppi_ws/map``
+
 ``ros2 run nav2_map_server map_saver_cli \
   -f ~/mppi_ws/map/map \
   --ros-args -p use_sim_time:=true``
 
-  map shape
+* map shape :
+
+![Photo From Rviz2 Simulation](<map>)
+
   
 * Verify there is a map:
+
 ``bashls ~/mppi_ws/map/``
 
-### should show: map.pgm  map.yaml
+**should show: map.pgm  map.yaml**
 
 ## The Work Flow is As follows : 
 
@@ -108,4 +123,4 @@ Robot should start moving using MPPI
 
 > And here is a Video for the simulation
 
-![MPPI Navigation Simulation](<video1.gif>)
+<video src="video.webm" width="500" controls></video>
