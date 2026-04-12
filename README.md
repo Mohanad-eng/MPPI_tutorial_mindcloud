@@ -1,6 +1,6 @@
-# MPPI_tutorial_mindcloud
+# MPPI_tutorial_mindcloud📊
 
-## What is MPPI ?
+## What is MPPI ?📍
 
 - MPPI is Model Predective path integral an approach from MPC control algorthim
 - Instead of solving a deterministic optimization problem,
@@ -13,7 +13,7 @@ Press enter or click to view image in full size
 
 ![Photo From Rviz2 Simulation](<https://miro.medium.com/v2/resize:fit:1100/format:webp/1*rddpGzFMMdBFkFmmLdQDuA.png>)
 
-## let's Simulate the Above approach !
+## let's Simulate the Above approach !✅️
 * First we will use turtlebot3 named waffle
 ``export TURTLEBOT3_MODEL=waffle``
 
@@ -55,7 +55,7 @@ open your terminal and paste these lines :
 
 > if you have a Made pkg for mapping you can use it also
   
-## then to control turtlebot3 we use the tekleop to make a map 
+## then to control turtlebot3 we use the tekleop to make a map ⌨️
 open your another terminal and paste these lines : 
 
 ``export TURTLEBOT3_MODEL=waffle`` 
@@ -122,7 +122,7 @@ Terminal 6 → RViz2
 
 `` ros2 launch turtlebot3_navigation2 navigation2.launch.py   use_sim_time:=true   map:=/home/mohanad/mppi_ws/map/map.yaml   params_file:=/home/mohanad/mppi_ws/params/nav2_mppi_params.yaml``
 
-## In Rviz2 :
+## In Rviz2💻 :
 
 Click "2D Pose Estimate" → click where the robot is on the map → drag to set direction
 Wait a few seconds for AMCL to localize
@@ -130,7 +130,7 @@ Wait a few seconds for AMCL to localize
 Click "Nav2 Goal" → click anywhere on the map → drag to set direction
 Robot should start moving using MPPI
 
-> Photos from Rviz Window 
+> Photos from Rviz Window 📹
 
 ![Photo From Rviz2 Simulation](<Screenshot from 2026-04-07 07-44-41.png>)
 
